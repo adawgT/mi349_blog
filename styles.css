@@ -1,0 +1,116 @@
+body, h1, h2, h3, p, ul, ol, figure, table, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic typography */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+/* Layout styles */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+article {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Flexbox layouts */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar {
+    width: 30%;
+    margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Form layout using Flexbox */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container label {
+    margin-bottom: 10px;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.form-container textarea {
+    height: 150px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #555;
+}
